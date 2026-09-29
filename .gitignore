@@ -1,0 +1,7 @@
+# Maven-generated files
+target/
+
+# Local IDE settings
+.idea/
+.vscode/
+*.iml
