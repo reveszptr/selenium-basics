@@ -9,8 +9,8 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>selenium-basics</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+
+  <url>https://github.com/reveszptr/selenium-basics</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,9 +20,15 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.13.4</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.35.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -46,7 +52,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
+          <version>3.5.4</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
