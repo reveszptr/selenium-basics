@@ -1,10 +1,13 @@
 # Selenium Basics
 
-Gyakorlóprojekt Java-alapú webes tesztautomatizáláshoz.
+A small practice project for learning web test automation with Java and Selenium.
 
-A tesztek a [Selenium Web Form](https://www.selenium.dev/selenium/web/web-form.html) oldalán futnak. Jelenleg egy szövegmező kitöltését és értékének ellenőrzését tartalmazza.
+The tests use Selenium's public Web Form page:
+https://www.selenium.dev/selenium/web/web-form.html
 
-## Eszközök
+The current exercises focus on basic browser interactions, element locators, waits, and assertions.
+
+## Tech Stack
 
 - Java 21
 - Maven
@@ -12,26 +15,19 @@ A tesztek a [Selenium Web Form](https://www.selenium.dev/selenium/web/web-form.h
 - JUnit 5
 - Google Chrome
 
-## Futtatás
+## Project Structure
 
-A projekt gyökérmappájából, ahol a `pom.xml` található:
+- `src/test/java` - automated tests
+- `src/main/java` - sample application created with the project
+- `target` - generated build files and test reports
+
+Test reports are generated in:
+
+`target/surefire-reports`
+
+## Running the Tests
+
+Run all tests from the project root:
 
 ```bash
 mvn test
-```
-
-Csak az űrlap tesztjeinek futtatása:
-
-```bash
-mvn test "-Dtest=WebFormTest"
-```
-
-Az első futtatáskor a szükséges függőségek és a böngésződriver letöltése időt vehet igénybe.
-
-## Mappák
-
-- `src/test/java`: tesztek
-- `src/main/java`: a projektgeneráláskor létrejött mintaprogram
-- `target`: generált fájlok és teszteredmények
-
-A tesztfuttatás riportjai a `target/surefire-reports` mappában találhatók.
