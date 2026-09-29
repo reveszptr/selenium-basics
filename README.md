@@ -1,6 +1,6 @@
 # Project Name
 
-AI Automata tesztelés 
+AI Automation testing 
 
 ## Technologies
 
